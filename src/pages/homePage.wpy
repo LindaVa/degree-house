@@ -1,0 +1,104 @@
+<style lang="less">
+  .searchBar{
+    background: #4a4a4a;
+    height: 165rpx;
+  }
+  .searchBar text{
+    padding: 40rpx 0;
+    color: #999;
+    display: block;
+    font-size: 30rpx;
+    text-align: center;
+  }
+  .searchInfo{
+    height: 85rpx;
+    margin: 0 60rpx;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .searchIcon{
+    width: 60rpx;
+    height: 60rpx;
+    margin-left: 60rpx;
+    background-color: #ccc;
+  }
+  .searchInput{
+    flex: 1;
+    padding-left: 20rpx;
+    font-size: 30rpx;
+  }
+  .rankingGroup{
+    margin-top: 80rpx;
+    padding: 0 30rpx;
+  }
+  .itemList{
+    margin: 0 -30rpx;
+  }
+  .rTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .textTitle{
+    flex:1;
+    font-size: 30rpx;
+  }
+  .linkBox{
+    display: flex;
+    align-items: center;
+  }
+  .linkBox text{
+    color: #9b9b9b;
+    font-size: 28rpx;
+  }
+  .moreIcon{
+    width: 28rpx;
+    height: 28rpx;
+    margin-left: 10rpx;
+    background-color: #9b9b9b;
+  }
+  .cYellow{
+    color: #F5A623;
+  }
+</style>
+<template>
+  <view class="searchBar">
+    <text>真正的学区找房，数据真实无中介</text>
+    <view class="searchInfo">
+      <view class="searchIcon"></view>
+      <input class="searchInput" placeholder="搜索想读的学校或者想住片区" />
+    </view>
+  </view>
+  <view class="rankingGroup">
+    <view class="rTitle">
+      <view class="textTitle">四大版初中名校排名</view>
+      <view class="linkBox">
+        <text>查看全部</text>
+        <view class="moreIcon"></view>
+      </view>
+    </view>
+    <view class="itemList">
+      <view class="itemColumn">
+        <div class="itemBox">
+          <view class="numberTxt">1</view>
+          <view class="rightBox">
+            <view class="logoBox"></view>
+            <view class="textBox">
+              <view class="name">深圳外国语学校（初中部）</view>
+              <view class="tips">2017入取四大比例<text class="cYellow">64.4%</text></view>
+            </view>
+          </view>
+        </div>
+      </view>
+    </view>
+  </view>
+
+</template>
+<script>
+  import wepy from 'wepy'
+  export default class IndexPage extends wepy.page {
+  }
+</script>

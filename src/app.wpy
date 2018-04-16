@@ -17,13 +17,14 @@ import 'wepy-async-function'
 export default class extends wepy.app {
   config = {
     pages: [
+      'pages/homePage',
       'pages/index'
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarBackgroundColor: '#4a4a4a',
+      navigationBarTitleText: '学区找房',
+      navigationBarTextStyle: '#fff'
     }
   }
 
