@@ -1,0 +1,66 @@
+<style lang="less">
+  .arrowDown,.arrowUp{
+    width:40rpx;
+    height:27rpx;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .arrowBox.mind{
+    .arrowUp,.arrowDown{
+      width: 30rpx;
+      height: 20rpx;
+    }
+  }
+  .arrowDown{
+    background-image: url("data:image/png;base64,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");
+  }
+  .arrowUp{
+    background-image: url("data:image/png;base64,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");
+  }
+  .navTagBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1rpx solid #d1d1d1;
+  }
+  .tagItem{
+    padding: 30rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+<template>
+  <view class="navTagBar">
+    <view class="tagItem">
+      <view>区域</view>
+      <view class="arrowBox">
+        <view class="arrowUp"></view>
+      </view>
+    </view>
+    <view class="tagItem">
+      <view>价格</view>
+      <view class="arrowBox">
+        <view class="arrowDown"></view>
+      </view>
+    </view>
+    <view class="tagItem">
+      <view>房型</view>
+      <view class="arrowBox mind">
+        <view class="arrowUp"></view>
+        <view class="arrowDown"></view>
+      </view>
+    </view>
+    <view class="tagItem">
+      <view>更多</view>
+      <view class="arrowBox">
+        <view class="arrowDown"></view>
+      </view>
+    </view>
+  </view>
+</template>
+<script>
+  import wepy from 'wepy'
+  export default class IndexPage extends wepy.page {
+  }
+</script>

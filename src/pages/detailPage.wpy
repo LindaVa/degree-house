@@ -1,0 +1,82 @@
+<style lang="less">
+  .bannerBox{
+    width: 100%;
+    height: 400rpx;
+    background-color: #ccc;
+    overflow: hidden;
+    image{
+      width: 100%;
+    }
+  }
+  .cGray{
+    color: #999;
+  }
+  .businessCard{
+    padding: 30rpx;
+  }
+  .titleName{
+    font-size: 40rpx;
+  }
+  .dataBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40rpx;
+    .item{
+      text{font-size: 50rpx;}
+      .cGray{
+        font-size: 28rpx;
+      }
+    }
+  }
+  .tips{
+    margin-top: 30rpx;
+    font-size: 28rpx;
+  }
+  .sectionTxt{
+    color: #666;
+    font-size: 32rpx;
+    margin-top: 30rpx;
+  }
+  .linkBtn{
+    margin-top: 30rpx;
+    text-align: center;
+    font-size: 36rpx;
+    color: #666;
+    padding: 30rpx 0;
+    border-radius: 10rpx;
+    background-color: #f5f5f5;
+  }
+</style>
+<template>
+  <view class="bannerBox">
+  </view>
+  <view class="businessCard">
+    <view class="titleName">深圳外国语学校（初中部）</view>
+    <view class="dataBox">
+      <view class="item">
+        <text>440人</text>
+        <view class="cGray">录取人数</view>
+      </view>
+      <view class="item">
+        <text>293人</text>
+        <view class="cGray">四大录取人数</view>
+      </view>
+      <view class="item">
+        <text>66.59%</text>
+        <view class="cGray">入取比率</view>
+      </view>
+    </view>
+    <view class="detailText">
+      <view class="tips cGray">该数据为广州教育局 2017年数据</view>
+      <view class="sectionTxt">深圳外国语学校创办于1990年，是市教育局直属重点学校、广东省一级学校、全国文明单位、是教育部确立的全国依法治校示范校、全国首批13所可保送20%高中毕业生上重点大学的外国语学校之一。</view>
+      <view class="sectionTxt">二十多年来，深外的办学规模不断发展，目前拥有一校六部，包括一所小学、一所初中、两所高中以及两所国际部，是整个深圳基础教育中办学种类最多、规模最大的学校之一。</view>
+    </view>
+    <view class="linkBtn">查看更多详情</view>
+  </view>
+</template>
+<script>
+  import wepy from 'wepy'
+  export default class IndexPage extends wepy.page {
+  }
+</script>
